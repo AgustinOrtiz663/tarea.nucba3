@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario HTML</title>
+</head>
+<body>
+    <h1>Formulario de Contacto</h1>
+
+    <form action="procesar_formulario" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario con Opciones Múltiples</title>
+</head>
+<br>
+<body>
+
+    <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Correo:</label>
+        <input type="text" id="Correo" name="Correo" required><br><br>
+        
+        <label>modalidad de cursada</label>
+        <input type="radio" id="modalidad de cursada" name="modalidad de cursada" value="On-Demand">
+        <label for="modalidad de cursada">On-Demand</label>
+        <input type="radio" id="modalidad de cursada" name="modalidad de cursada" value="En vivo">
+        <label for="modalidad de cursada">En vivo</label><br><br>
+        
+        <input type="checkbox" id="aceptacion de servicios" name="servicios[]" value="servicios">
+        <label for="aceptacion de servicios">Deseo recibir informacion de sobre nuevos posteos en la plataforma nucba</label><br>
+        <input type="checkbox" id="aceptacion de servicios" name="servicios[]" value="servicios">
+        <label for="aceptacion de servicios">Declaro que lei terminos y condiciones, y estoy listo para convertirme en desarrollador Web Full Stack</label><br>
+        <label for="interes-tecnologia">Tecnología</label><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
